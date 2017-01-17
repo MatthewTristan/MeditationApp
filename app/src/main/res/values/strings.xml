@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Meditation App</string>
+    <string name="play_bell">Play Bell</string>
+    <string name="Meditation_Duration">Meditation Duration</string>
+    <string name="select_duration">Select Duration (Minutes)</string>
+    <string-array name="Durations">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+</resources>
