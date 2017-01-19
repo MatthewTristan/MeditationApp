@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if (wakeLock.isHeld()) wakeLock.release();
         bell.playBell();
         wakeLock.acquire();
+        myTimer.cancel();
         myTimer.purge();
         myTimer.schedule(new TimerTask(){
             @Override
