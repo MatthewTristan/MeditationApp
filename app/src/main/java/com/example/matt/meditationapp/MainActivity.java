@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 duration = Integer.parseInt((String) parent.getItemAtPosition(position));
-                }
+            }
             //if nothing is selected, standard session is 10 minutes.
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         if (wakeLock.isHeld()) wakeLock.release();
         bell.playBell();
         wakeLock.acquire();
-        myTimer.cancel();
         myTimer.purge();
         myTimer.schedule(new TimerTask(){
             @Override
